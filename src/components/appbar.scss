@@ -1,0 +1,78 @@
+.appbar {
+  background-color: rgb(94, 201, 178);
+  min-height: 100px;
+  display: flex;
+  .heading {
+    flex: 1;
+    padding-left: 30px;
+  }
+  .navigation-tab {
+    flex: 1.5;
+  }
+  .social-media {
+    //display: flex;
+    padding: 10px;
+    margin-left: 10px;
+    flex: 1;
+
+    .fa {
+      min-width: 25px;
+      padding: 15px;
+      font-size: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 7px;
+      border-radius: 50%;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+    .fa-facebook {
+      background: #525864;
+      color: white;
+    }
+    .fa-google {
+      background: #525864;
+      color: white;
+    }
+
+    .fa-youtube {
+      background: #525864;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #525864;
+      color: white;
+    }
+
+    .fa-pinterest {
+      background: #525864;
+      color: white;
+    }
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    //justify-content: space-around;
+  }
+  li {
+    //overflow: hidden;
+    white-space: nowrap;
+    flex: 1;
+    height: 20px;
+    border-style: solid;
+    background-color: rgb(68, 170, 136);
+    border-color: rgb(68, 170, 136);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+  }
+  li:hover {
+    cursor: pointer;
+    background-color: rgb(87, 133, 123);
+  }
+}
