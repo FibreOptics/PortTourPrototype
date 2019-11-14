@@ -7,7 +7,7 @@
   justify-content: center;
   border: 1px solid black;
   background-position: center;
-  background-size: 80% 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow: hidden;
   margin: 4px;
@@ -17,7 +17,7 @@
     height: 760px;
   }
 
-  .content {
+/*   .content {
     height: 90px;
     padding: 0 25px;
     display: flex;
@@ -36,6 +36,6 @@
     .subtitle {
       font-weight: lighter;
       font-size: 16px;
-    }
+    } */
   }
 }
