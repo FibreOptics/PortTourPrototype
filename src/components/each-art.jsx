@@ -4,7 +4,11 @@ import "./each-art.scss";
 const EachArt = ({ title, imgUrl }) => {
   console.log(this);
   return (
-    <div style={{ backgroundImage: `url(${imgUrl})` }} className='menu-item'>
+    <div className='menu-item'>
+      <div
+        style={{ backgroundImage: `url(${imgUrl})` }}
+        className='background-image'
+      />
       <div className='content'></div>
     </div>
   );
