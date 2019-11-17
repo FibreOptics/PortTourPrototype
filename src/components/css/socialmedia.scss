@@ -1,0 +1,61 @@
+.social-media {
+  display: flex;
+  padding: 10px;
+  flex: 1.2;
+
+  &.appbar {
+    justify-content: flex-end;
+  }
+
+  &.footer {
+    justify-content: center;
+  }
+
+  a span {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+    top: -10px;
+  }
+
+  .fa {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin: 7px;
+    border-radius: 50%;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #9087a1;
+    color: white;
+  }
+  .fa-google {
+    background: #9087a1;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #9087a1;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #9087a1;
+    color: white;
+  }
+
+  .fa-pinterest {
+    background: #9087a1;
+    color: white;
+  }
+}

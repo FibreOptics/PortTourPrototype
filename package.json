@@ -20,7 +20,8 @@
   },
   "homepage": "https://fibreoptics.github.io/PortTourPrototype",
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {}
   },
   "browserslist": {
     "production": [

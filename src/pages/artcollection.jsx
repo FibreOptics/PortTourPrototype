@@ -1,19 +1,17 @@
 import React from "react";
-import "./css/homepage.scss";
+import "./css/artcollection.scss";
 import Portfolio from "../components/portfolio";
 import Appbar from "../components/appbar";
 import Footer from "../components/footer";
 
-const homepage = () => {
+const artcollection = () => {
   return (
     <div className='homepage'>
       <Appbar />
-      <div style={{ backgroundColor: "white", textAlign: "center" }}>
-        <h2>Homepage</h2>
-      </div>
+      <Portfolio />
       <Footer />
     </div>
   );
 };
 
-export default homepage;
+export default artcollection;

@@ -1,19 +1,17 @@
 import React from "react";
-import "./css/homepage.scss";
-import Portfolio from "../components/portfolio";
 import Appbar from "../components/appbar";
 import Footer from "../components/footer";
+import "./css/workWithMe.scss";
 
-const homepage = () => {
+const workWithMe = () => {
   return (
-    <div className='homepage'>
+    <div className='workWithMe'>
       <Appbar />
       <div style={{ backgroundColor: "white", textAlign: "center" }}>
-        <h2>Homepage</h2>
+        <h2>Work with me</h2>
       </div>
       <Footer />
     </div>
   );
 };
-
-export default homepage;
+export default workWithMe;

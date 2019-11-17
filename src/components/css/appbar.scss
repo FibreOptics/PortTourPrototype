@@ -1,0 +1,37 @@
+.appbar {
+  flex: 0 1 120px;
+  background-color: rgb(94, 201, 178);
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 1px;
+  .heading {
+    flex: 1;
+    padding-left: 1.5%;
+  }
+  .navigation-tab {
+    flex: 1.5;
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 10px;
+    }
+    li {
+      flex: 1;
+      border-style: solid;
+      background-color: rgb(68, 170, 136);
+      border-color: rgb(68, 170, 136);
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      white-space: nowrap;
+    }
+    li:hover {
+      cursor: pointer;
+      background-color: rgb(87, 133, 123);
+    }
+  }
+}

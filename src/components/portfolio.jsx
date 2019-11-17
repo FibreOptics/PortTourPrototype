@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./portfolio.scss";
+import "./css/portfolio.scss";
 import EachArt from "./each-art";
 
 class Portfolio extends Component {
@@ -42,7 +42,7 @@ class Portfolio extends Component {
   }
   render() {
     return (
-      <div className='portfolio'>
+      <div className="portfolio">
         {this.state.portfolios.map(({ id, title, imageUrl }) => {
           console.log(imageUrl);
           return <EachArt key={id} title={title} imgUrl={imageUrl} />;

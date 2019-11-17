@@ -1,15 +1,15 @@
 import React from "react";
-import "./each-art.scss";
+import "./css/each-art.scss";
 
 const EachArt = ({ title, imgUrl }) => {
   console.log(this);
   return (
-    <div className='menu-item'>
+    <div className="menu-item">
       <div
         style={{ backgroundImage: `url(${imgUrl})` }}
-        className='background-image'
+        className="background-image"
       />
-      <div className='content'></div>
+      <div className="content"></div>
     </div>
   );
 };

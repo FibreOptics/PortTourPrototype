@@ -1,35 +1,32 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./appbar.scss";
+import { withRouter } from "react-router-dom";
 
-export default function appbar() {
+import "./css/appbar.scss";
+import SocialMedia from "./socialmedia";
+
+const appbar = ({ history }) => {
   const menu = [
-    "Home",
-    "Artwork",
-    "About",
-    "Work with me",
-    "Commisions",
-    "FAQ"
+    { title: "Home", link: "/" },
+    { title: "Artwork", link: "/Illustrations" },
+    { title: "About", link: "/About" },
+    { title: "Work with me", link: "/WorkWithMe" },
+    { title: "Commisions", link: "/Commissions" }
   ];
+
   return (
     <div className='appbar'>
       <div className='heading'>
-        <h1>Mr.Tour's folio</h1>
+        <h1>Mr.Tour's Artworks</h1>
       </div>
       <div className='navigation-tab'>
         <ul>
           {menu.map(x => (
-            <li>{x}</li>
+            <li onClick={() => history.push(x.link)}>{x.title}</li>
           ))}
         </ul>
       </div>
-      <div className='social-media'>
-        <Link to='http://facebook.com' className='fa fa-google' />
-        <Link to='http://facebook.com' className='fa fa-facebook' />
-        <Link to='http://facebook.com' className='fa fa-youtube' />
-        <Link to='http://facebook.com' className='fa fa-instagram' />
-        <Link to='http://facebook.com' className='fa fa-pinterest' />
-      </div>
+      <SocialMedia styles='appbar' />
     </div>
   );
-}
+};
+export default withRouter(appbar);
